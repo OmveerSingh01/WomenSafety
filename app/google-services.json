@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638908161119",
+    "project_id": "womensafetyapp-omveer",
+    "storage_bucket": "womensafetyapp-omveer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638908161119:android:4b98df304308399c2c8fea",
+        "android_client_info": {
+          "package_name": "com.omveer.womensafety"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtpifXw2P6T4wg1quA6wjPoOnFtAmv8tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
