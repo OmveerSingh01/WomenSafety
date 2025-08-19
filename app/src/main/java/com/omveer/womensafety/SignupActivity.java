@@ -47,11 +47,30 @@ public class SignupActivity extends AppCompatActivity {
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        Toast.makeText(this, "Signup successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(SignupActivity.this, MainActivity.class));
-                        finish();
+                        // user created successfully
+                        if (auth.getCurrentUser() != null) {
+                            // send verification email
+                            auth.getCurrentUser().sendEmailVerification()
+                                    .addOnCompleteListener(task1 -> {
+                                        if (task1.isSuccessful()) {
+                                            Toast.makeText(this,
+                                                    "Signup successful! Verification email sent. Please check your inbox.",
+                                                    Toast.LENGTH_LONG).show();
+
+                                            // after signup, go to Login screen (not MainActivity)
+                                            startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+                                            finish();
+                                        } else {
+                                            Toast.makeText(this,
+                                                    "Failed to send verification email.",
+                                                    Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                        }
                     } else {
-                        Toast.makeText(this, "Signup Failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this,
+                                "Signup Failed: " + task.getException().getMessage(),
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
     }
