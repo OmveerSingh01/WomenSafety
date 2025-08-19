@@ -1,3 +1,37 @@
 <resources>
-    <string name="app_name">WomenSafety</string>
+    <string name="app_name">Women Safety</string>
+
+    <string name="about_app_text">
+        🔹 App Name: Women Safety\n\n
+        🔹 Purpose:\n
+        Enhances personal safety by enabling SOS alerts with real-time location.\n\n
+
+        🔹 Key Features:\n
+        • SOS button for instant help request\n
+        • Location sharing via SMS/Firebase\n
+        • Contact management for emergency numbers\n
+        • Email verification for secure login\n
+        • Simple, minimal UI\n\n
+
+        🔹 Developer:\n
+        Omveer Singh\n
+        B.Tech CSE, JECRC University, Jaipur\n
+        LinkedIn: https://www.linkedin.com/in/omveer-singh-a4b292250\n\n
+
+        🔹 Technology Stack:\n
+        • Frontend: XML (Android UI)\n
+        • Backend/Logic: Java\n
+        • Database &amp; Auth: Firebase\n
+        • Tools: Android Studio, Gradle\n\n
+
+        🔹 Future Improvements:\n
+        • Auto location updates after SOS\n
+        • Voice trigger for alerts\n
+        • Panic shake detection\n
+        • Integration with police helpline API\n
+        • Offline SMS sending\n\n
+
+        🔹 Placement Relevance:\n
+        Demonstrates Android development, Firebase integration, UI/UX, and solving real-world safety problems.
+    </string>
 </resources>

@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnSos, btnLogin, btnContacts, btnTips;
@@ -62,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, TipsActivity.class)));
 
         btnSos.setOnClickListener(v -> triggerSos());
+        Button aboutBtn = findViewById(R.id.btnAboutApp);
+        aboutBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AboutAppActivity.class);
+            startActivity(intent);
+        });
+
+
     }
 
     private void triggerSos() {
