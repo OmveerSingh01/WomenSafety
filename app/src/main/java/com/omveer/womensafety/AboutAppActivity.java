@@ -1,8 +1,8 @@
 package com.omveer.womensafety;
 
 import android.os.Bundle;
-import android.widget.TextView;  // ✅ Import TextView
-import android.text.method.LinkMovementMethod; // ✅ Import for clickable links
+import android.widget.TextView;  // Importd TextView
+import android.text.method.LinkMovementMethod; //  Importd for clickable links
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AboutAppActivity extends AppCompatActivity {

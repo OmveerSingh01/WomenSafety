@@ -19,7 +19,7 @@ public class OnboardingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // ✅ Check if onboarding already completed
+        //  Check if onboarding already completed
         SharedPreferences prefs = getSharedPreferences("onboarding", MODE_PRIVATE);
         boolean completed = prefs.getBoolean("completed", false);
         if (completed) {
@@ -49,7 +49,7 @@ public class OnboardingActivity extends AppCompatActivity {
             if (next < onboardingItems.size()) {
                 onboardingViewPager.setCurrentItem(next);
             } else {
-                // ✅ Mark onboarding completed
+                //  Mark onboarding completed
                 prefs.edit().putBoolean("completed", true).apply();
 
                 // Go to MainActivity
