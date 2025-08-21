@@ -1,16 +1,15 @@
 # 🛡️ Women Safety App  
 
 <p align="center">
-  <img src="assets/WSlogo.jpg" alt="App Logo" width="120"/>  
+  <img src="assets/WSlogo.png" alt="App Logo" width="120"/>  
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>  
-  <img src="https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=xml&logoColor=white"/>  
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>  
-  <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white"/>  
-</p>  
-
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XML-FF6600?style=flat-square&logo=xml&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white"/>
+</p>
 A mobile application built to enhance women’s safety by providing quick access to emergency contacts, safety tips, and SOS features.  
 This project is developed in **Android Studio (Java + XML)** with **Firebase Authentication & Realtime Database** for secure data management, and packaged as an APK for installation.  
 
